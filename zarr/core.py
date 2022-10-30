@@ -169,7 +169,8 @@ class Array:
         cache_metadata=True,
         cache_attrs=True,
         partial_decompress=False,
-        write_empty_chunks=True,
+        # GG: changed default from True to False
+        write_empty_chunks=False,
         zarr_version=None,
         meta_array=None,
     ):
